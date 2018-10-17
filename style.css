@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #1433c4;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#app {
+  width: 500px;
+  max-width: 90%;
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 10vh;
+}
+.title {
+  font-size: 3rem;
+}
+.question {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+#input-number {
+  padding: 3px 0px 3px 3px;
+  border: 1px solid #DDDDDD;
+  transition: all 10ms;
+  font-size: 1.5rem;
+  width: 200px;
+  max-width: 100%;
+  transition: all 100ms;
+}
+#input-number:focus, #input-number:hover {
+  outline: none;
+  border: 1px solid rgb(66, 85, 173);
+}
+#check-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(13, 44, 180);
+  color: #1433c4;
+  font-weight: 400;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #1433c4;
+}
+#check-button:hover, #check-button:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.is-deactivated {
+  background-color: rgba(0,0,0,0.3) !important;
+}
+
+.message-wrapper {
+  min-height: 100px;
+  width: 100%;
+}
+.message {
+  min-height: 3rem;
+  padding: 10px 20px;
+  display: none;
+  color: #09af09;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.has-error {
+  color: red !important;
+}
